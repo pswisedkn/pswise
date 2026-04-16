@@ -6,28 +6,24 @@
 
 <title>pswise | Practical Solutions, Wisely Delivered</title>
 
-<meta name="description" content="pswise provides program delivery and advisory services for telecom, digital VAS, infrastructure, finance, FMCG, IT and enterprise software environments. 20+ years experience in complex multi-country programs.">
+<meta name="description" content="pswise provides program delivery and advisory services for telecom, finance, infrastructure, FMCG, IT and enterprise software environments. 20+ years delivering complex multi-country programs.">
 <meta name="keywords" content="telecom consulting, program management, VAS services, infrastructure, finance, FMCG, IT, enterprise software, agile delivery, project delivery, digital transformation, pswise">
 <meta name="author" content="pswise">
 <link rel="canonical" href="https://www.pswise.com">
 
-<!-- FAVICON -->
 <link rel="icon" type="image/png" href="logo.png">
 
-<!-- Open Graph -->
 <meta property="og:title" content="pswise | Practical Solutions, Wisely Delivered">
-<meta property="og:description" content="Program delivery and advisory services for telecom, digital VAS, infrastructure, finance, FMCG, IT, and enterprise software.">
+<meta property="og:description" content="Program delivery and advisory services for telecom, finance, IT, infrastructure, FMCG and enterprise software.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.pswise.com">
 <meta property="og:image" content="logo.png">
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="pswise">
 <meta name="twitter:description" content="Practical Solutions, Wisely Delivered">
 <meta name="twitter:image" content="logo.png">
 
-<!-- Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -51,9 +47,7 @@
     --primary: #111827;
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -63,7 +57,6 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
 header {
     position: sticky;
     top: 0;
@@ -74,7 +67,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
     flex-wrap: wrap;
 }
 
@@ -102,88 +94,22 @@ nav a {
     color: var(--text);
     font-size: 14px;
     font-weight: 500;
-    transition: color 0.2s ease;
 }
 
-nav a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
-/* HERO */
 .hero {
     text-align: center;
     padding: 120px 20px 100px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80');
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
     color: white;
-    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 64px;
-    margin: 0;
-    letter-spacing: -1px;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
+.hero h1 { font-size: 56px; margin: 0; letter-spacing: -1px; }
+.hero h2 { font-weight: 400; opacity: 0.9; }
+.hero p { max-width: 780px; margin: 20px auto; font-size: 18px; color: rgba(255,255,255,0.85); }
 
-.hero h2 {
-    font-weight: 400;
-    color: rgba(255,255,255,0.9);
-    margin-top: 5px;
-}
-
-.hero p {
-    max-width: 750px;
-    margin: 20px auto;
-    color: rgba(255,255,255,0.85);
-    font-size: 18px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
-.buttons {
-    margin-top: 30px;
-}
-
-.buttons a {
-    padding: 14px 28px;
-    margin: 6px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    display: inline-block;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: 1px solid transparent;
-}
-
-.buttons a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.primary {
-    background: white;
-    color: var(--primary) !important;
-    border-color: white;
-}
-
-.primary:hover {
-    background: #f0f0f0;
-}
-
-.secondary {
-    border: 1px solid white !important;
-    color: white !important;
-    background: transparent;
-}
-
-.secondary:hover {
-    background: rgba(255,255,255,0.1);
-}
-
-/* SECTIONS */
 .section {
     padding: 80px 20px;
     max-width: 1200px;
@@ -193,61 +119,26 @@ nav a:hover {
 h2 {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 2.2rem;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    font-size: 2rem;
 }
 
-/* GRID */
-.grid {
-    display: grid;
-    gap: 25px;
-}
+.grid { display: grid; gap: 25px; }
 
-@media(min-width: 768px) {
-    .grid-3 {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .grid-2 {
-        grid-template-columns: 1fr 1fr;
-    }
-    .grid-5 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media(min-width: 1024px) {
-        .grid-5 {
-            grid-template-columns: repeat(5, 1fr);
-        }
-        .grid-4 {
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
+@media(min-width:768px){
+    .grid-3{grid-template-columns:repeat(3,1fr);}
+    .grid-2{grid-template-columns:repeat(2,1fr);}
+    .grid-4{grid-template-columns:repeat(4,1fr);}
+    .grid-5{grid-template-columns:repeat(5,1fr);}
 }
 
 .card {
     background: var(--card);
     border: 1px solid var(--border);
-    padding: 30px 25px;
+    padding: 28px;
     border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
-    transition: all 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.card:hover {
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 10px 10px -5px rgb(0 0 0 / 0.02);
-    border-color: #cbd5e1;
 }
 
 .card-icon {
-    font-size: 32px;
-    margin-bottom: 20px;
-    display: block;
     width: 50px;
     height: 50px;
     background: #f3f4f6;
@@ -255,99 +146,24 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
+    margin-bottom: 15px;
 }
 
-/* IMAGE */
-.image {
-    width: 100%;
-    border-radius: 16px;
-    margin-top: 20px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-}
-
-/* About Flex Row */
-.about-row {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-top: 30px;
-}
-
-.about-content {
-    flex: 1;
-}
-
-.about-image {
-    flex: 1;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-}
-
-/* Domain Tag Stili */
 .domain-badge {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 4px 10px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    width: fit-content;
+    margin-bottom: 10px;
+    background: #eef2ff;
 }
 
-.badge-telecom { background: #dbeafe; color: #1e40af; }
-.badge-fmcg { background: #dcfce7; color: #166534; }
-.badge-it { background: #f3e8ff; color: #6b21a8; }
-.badge-finance { background: #fef3c7; color: #92400e; }
-.badge-infra { background: #fee2e2; color: #991b1b; }
-.badge-enterprise { background: #e0e7ff; color: #3730a3; }
-
-/* FOOTER */
 footer {
     text-align: center;
     padding: 40px;
     color: var(--muted);
-    font-size: 14px;
     border-top: 1px solid var(--border);
     margin-top: 40px;
-}
-
-/* RESPONSIVE FIXES */
-@media (max-width: 640px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .hero h1 {
-        font-size: 42px;
-    }
-    
-    .hero h2 {
-        font-size: 20px;
-    }
-    
-    .hero p {
-        font-size: 16px;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
-    }
-    
-    .about-row {
-        flex-direction: column;
-    }
 }
 </style>
 </head>
@@ -355,310 +171,215 @@ footer {
 <body>
 
 <header>
-    <div class="logo">
-        <img src="logo.png" alt="pswise logo">
-        <span>pswise</span>
-    </div>
+<div class="logo">
+<img src="logo.png" alt="pswise logo">
+<span>pswise</span>
+</div>
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#strengths">Strengths</a>
-        <a href="#domains">Domains</a>
-        <a href="#cases">Experience</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+<a href="#services">Services</a>
+<a href="#strengths">Strengths</a>
+<a href="#domains">Domains</a>
+<a href="#cases">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <div class="hero">
-    <h1>pswise</h1>
-    <h2>Practical Solutions, Wisely Delivered</h2>
+<h1>pswise</h1>
+<h2>Practical Solutions, Wisely Delivered</h2>
 
-    <p>I help telecom, digital service providers, infrastructure, finance, FMCG, IT and enterprise software teams turn strategy into execution</p>
+<p>I help organizations turn strategy into execution across complex digital and enterprise programs in telecom, finance, infrastructure, FMCG and IT environments.</p>
 
-    <p><strong>20+ years experience across multiple domains and multi-country programs</strong><br>
-    <span style="font-size: 16px; opacity: 0.9;">9+ years enterprise software development background</span></p>
-
-    <div class="buttons">
-        <a href="#services" class="primary">Explore Services</a>
-        <a href="#contact" class="secondary">Get in Touch</a>
-    </div>
+<p>20+ years of program delivery experience<br>
+9+ years of enterprise software development background</p>
 </div>
 
 <div class="section" id="strengths">
-    <h2>Key Strengths for Embedded Implementation</h2>
-    <div class="grid grid-4">
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Multi-party Execution</h3>
-            <p>Strong experience in multi-party program execution across vendors, customers and internal teams.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            </div>
-            <h3>Long-term Relationships</h3>
-            <p>Proven ability to manage long-term delivery relationships.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"/><line x1="2" y1="20" x2="2.01" y2="20"/></svg>
-            </div>
-            <h3>Tech & Leadership</h3>
-            <p>Strong technical understanding (9+ years dev background) combined with program leadership.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v20"/><path d="M2 12h20"/></svg>
-            </div>
-            <h3>International Delivery</h3>
-            <p>Experience in complex international delivery environments.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9-4-18-3 9H2"/></svg>
-            </div>
-            <h3>Stakeholder Coordination</h3>
-            <p>Strong coordination of product, engineering and business stakeholders.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-            </div>
-            <h3>SaaS & Managed Services</h3>
-            <p>Experience in SaaS related managed services environments.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M12 22V12"/><path d="M9 10.5l-6-3.5"/><path d="M15 10.5l6-3.5"/></svg>
-            </div>
-            <h3>Agile Program Management</h3>
-            <p>Deep experience in Agile software development methodologies and program governance.</p>
-        </div>
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            </div>
-            <h3>Enterprise Dev Background</h3>
-            <p>9+ years of hands-on enterprise software development before program leadership.</p>
-        </div>
-    </div>
+<h2>Key Strengths</h2>
+<div class="grid grid-4">
+
+<div class="card">
+<div class="card-icon">👥</div>
+<h3>Multi-party Execution</h3>
+<p>Execution across vendors, customers and internal teams in complex programs.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🔗</div>
+<h3>Long-term Delivery</h3>
+<p>Managing long-term program relationships and delivery accountability.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">⚙️</div>
+<h3>Technical Background</h3>
+<p>Software engineering background combined with program leadership.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🌍</div>
+<h3>International Delivery</h3>
+<p>Multi-country program delivery across different operating models.</p>
+</div>
+
+</div>
 </div>
 
 <div class="section">
-    <h2>What I Bring</h2>
-    <div class="grid grid-3">
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-            </div>
-            <h3>Clarity in Complexity</h3>
-            <p>I simplify complex programs and align teams around priorities.</p>
-        </div>
+<h2>What I Bring</h2>
+<div class="grid grid-3">
 
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </div>
-            <h3>Execution Focused</h3>
-            <p>Not just planning, real delivery and accountability.</p>
-        </div>
+<div class="card">
+<div class="card-icon">🎯</div>
+<h3>Clarity</h3>
+<p>Bringing clarity to complex programs and execution environments.</p>
+</div>
 
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3>Experience Led</h3>
-            <p>Telecom, software, infrastructure, finance, FMCG, IT and multi-country program leadership.</p>
-        </div>
-    </div>
+<div class="card">
+<div class="card-icon">🚀</div>
+<h3>Execution Focus</h3>
+<p>Focus on delivery, outcomes and accountability.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📊</div>
+<h3>Cross-industry Experience</h3>
+<p>Telecom, finance, infrastructure, FMCG and IT program experience.</p>
+</div>
+
+</div>
 </div>
 
 <div class="section" id="services">
-    <h2>Services</h2>
+<h2>Services</h2>
+<div class="grid grid-3">
 
-    <div class="grid grid-3">
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            </div>
-            <h3>Program Delivery</h3>
-            <p>End-to-end program execution, vendor coordination and risk management in complex environments.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            </div>
-            <h3>Advisory</h3>
-            <p>Practical strategy, operating model design and execution planning.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a1.999 1.999 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <h3>Telecom & VAS</h3>
-            <p>VAS platforms, digital services and monetization-focused delivery support.</p>
-        </div>
-    </div>
+<div class="card">
+<div class="card-icon">📦</div>
+<h3>Program Delivery</h3>
+<p>End-to-end execution across stakeholders, vendors and enterprise programs.</p>
 </div>
 
-<!-- YENİ: Domain Expertise Bölümü - 5 Ayrı Domain -->
+<div class="card">
+<div class="card-icon">📄</div>
+<h3>Advisory</h3>
+<p>Practical advisory on operating models and execution planning.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📞</div>
+<h3>Telecom & VAS</h3>
+<p>Digital services and VAS program delivery with operational focus.</p>
+</div>
+
+</div>
+</div>
+
 <div class="section" id="domains">
-    <h2>Domain Expertise</h2>
-    <div class="grid grid-5">
-        
-        <!-- Telecom Domain -->
-        <div class="card">
-            <span class="domain-badge badge-telecom">📡 Telecom</span>
-            <div class="card-icon" style="margin-top: 5px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a1.999 1.999 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <h3>Telecom</h3>
-            <p>VAS platforms, digital services, OSS/BSS, and multi-country operator program delivery.</p>
-        </div>
-        
-        <!-- FMCG Domain -->
-        <div class="card">
-            <span class="domain-badge badge-fmcg">🛒 FMCG</span>
-            <div class="card-icon" style="margin-top: 5px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            </div>
-            <h3>FMCG</h3>
-            <p>Supply chain, retail execution, trade promotion management, and digital transformation programs for fast-moving consumer goods.</p>
-        </div>
-        
-        <!-- IT Domain -->
-        <div class="card">
-            <span class="domain-badge badge-it">💾 IT</span>
-            <div class="card-icon" style="margin-top: 5px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <h3>Information Technology</h3>
-            <p>IT transformation, infrastructure modernization, cloud migration, and enterprise architecture programs.</p>
-        </div>
-        
-        <!-- Finance Domain -->
-        <div class="card">
-            <span class="domain-badge badge-finance">💰 Finance</span>
-            <div class="card-icon" style="margin-top: 5px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3>Finance</h3>
-            <p>Banking, insurance, fintech program delivery, regulatory compliance initiatives, and financial systems integration.</p>
-        </div>
-        
-        <!-- Infrastructure Domain -->
-        <div class="card">
-            <span class="domain-badge badge-infra">🏗️ Infrastructure</span>
-            <div class="card-icon" style="margin-top: 5px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4"/><path d="M12 12v4"/><path d="M8 12v4"/><path d="M16 12v4"/></svg>
-            </div>
-            <h3>Infrastructure</h3>
-            <p>Large-scale infrastructure finance projects, energy, utilities, transportation, and public-private partnership delivery.</p>
-        </div>
-        
-    </div>
-    
-    <!-- Enterprise Software Development - Alt Bilgi Olarak -->
-    <div style="margin-top: 30px; text-align: center;">
-        <span class="domain-badge badge-enterprise" style="margin: 0 auto;">💻 + Enterprise Software Development (9+ years hands-on)</span>
-    </div>
+<h2>Domain Expertise</h2>
+<div class="grid grid-5">
+
+<div class="card">
+<span class="domain-badge">Telecom</span>
+<h3>Telecom</h3>
+<p>VAS, OSS/BSS and multi-country telecom programs.</p>
+</div>
+
+<div class="card">
+<span class="domain-badge">FMCG</span>
+<h3>FMCG</h3>
+<p>Supply chain and retail transformation programs.</p>
+</div>
+
+<div class="card">
+<span class="domain-badge">IT</span>
+<h3>IT</h3>
+<p>Enterprise IT and infrastructure modernization programs.</p>
+</div>
+
+<div class="card">
+<span class="domain-badge">Finance</span>
+<h3>Finance</h3>
+<p>Banking and fintech integration programs.</p>
+</div>
+
+<div class="card">
+<span class="domain-badge">Infra</span>
+<h3>Infrastructure</h3>
+<p>Energy, utilities and transportation programs.</p>
+</div>
+
+</div>
 </div>
 
 <div class="section" id="cases">
-    <h2>Experience Highlights</h2>
+<h2>Experience Highlights</h2>
+<div class="grid grid-2">
 
-    <div class="grid grid-2" style="margin-bottom: 30px;">
-        <div class="card">
-            <h3>Multi-country Telecom Programs</h3>
-            <p>Led delivery across multiple regions with complex stakeholder structures and vendors. Ensured alignment between central strategy and local market execution.</p>
-        </div>
+<div class="card">
+<h3>Multi-country Programs</h3>
+<p>Led complex multi-country program delivery across vendors and stakeholders.</p>
+</div>
 
-        <div class="card">
-            <h3>VAS Service Delivery</h3>
-            <p>Supported design, rollout and optimization of VAS and digital service platforms. Focused on time-to-market and operational stability.</p>
-        </div>
-    </div>
-    
-    <div class="grid grid-2" style="margin-bottom: 30px;">
-        <div class="card">
-            <h3>Infrastructure Program Delivery</h3>
-            <p>Managed delivery and governance of large-scale infrastructure initiatives in energy and utilities sectors. Coordinated between stakeholders, technical teams, and operational execution.</p>
-        </div>
+<div class="card">
+<h3>VAS Delivery</h3>
+<p>Delivered VAS and digital service platform programs.</p>
+</div>
 
-        <div class="card">
-            <h3>FMCG Digital Transformation</h3>
-            <p>Led program delivery for FMCG supply chain and trade promotion optimization initiatives across multiple markets.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Infrastructure</h3>
+<p>Managed infrastructure programs in regulated environments.</p>
+</div>
 
-    <div class="grid grid-2" style="margin-bottom: 30px;">
-        <div class="card">
-            <h3>Finance Systems Integration</h3>
-            <p>Delivered complex financial systems integration programs for banking and fintech environments, ensuring regulatory compliance and operational stability.</p>
-        </div>
+<div class="card">
+<h3>FMCG</h3>
+<p>Led FMCG digital transformation programs.</p>
+</div>
 
-        <div class="card">
-            <h3>Enterprise Agile Transformation</h3>
-            <p>Led Agile program management for enterprise software delivery teams. Combined 9+ years of development background with program governance to drive predictable, high-quality releases.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Finance</h3>
+<p>Delivered financial systems integration programs.</p>
+</div>
 
-    <!-- Data Center / Cloud / Telekom Altyapısı Görseli -->
-    <img class="image" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Modern Data Center and Cloud Infrastructure">
-    <p style="text-align: center; margin-top: 10px; color: var(--muted); font-size: 14px;">Delivering clarity in large-scale digital and telecommunications infrastructure environments.</p>
+<div class="card">
+<h3>Agile Delivery</h3>
+<p>Led enterprise Agile delivery programs with engineering background.</p>
+</div>
+
+</div>
+
+<img class="image" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Data Center">
 </div>
 
 <div class="section">
-    <h2>About pswise</h2>
-
-    <div class="about-row">
-        <div class="about-content">
-            <p style="font-size: 1.1rem; font-weight: 500;">Combining practical execution with strategic thinking.</p>
-            <p>The focus is not only on defining solutions, but on making them work in real environments. With 9+ years of enterprise software development experience and 20+ years across telecom, finance, infrastructure, FMCG, IT, and multi-country programs, the approach is grounded in real delivery challenges.</p>
-            <p>Many initiatives fail not because of lack of ideas, but because of execution gaps. pswise aims to close that gap by bringing structure, clarity, and follow-through into complex programs.</p>
-            <p>The goal is simple: <strong>turn complexity into clear actions and ensure those actions lead to results.</strong></p>
-        </div>
- <!--       <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Professional working on strategy">
-        </div> -->
-    </div>
+<h2>About pswise</h2>
+<p style="max-width:900px;margin:auto;text-align:center;">
+The focus is execution in real enterprise environments. Many programs fail not because of strategy, but because of execution gaps across teams, vendors and operating models. pswise focuses on closing this gap through structure, clarity and delivery discipline. The goal is to turn complexity into execution and execution into measurable outcomes.
+</p>
 </div>
 
 <div class="section" id="contact">
-    <h2>Contact</h2>
-
-    <div class="card" style="text-align: center; max-width: 500px; margin: 0 auto;">
-        <p style="font-size: 1.2rem; margin-bottom: 5px;">📧 <a href="mailto:oguz@pswise.com">oguz@pswise.com</a></p>
-        <p style="margin-top: 15px;">🔗 <a href="https://www.linkedin.com/in/oguzdikbakan/" target="_blank">linkedin.com/in/oguzdikbakan</a></p>
-    </div>
+<h2>Contact</h2>
+<div class="card" style="text-align:center;max-width:500px;margin:auto;">
+<p>oguz@pswise.com</p>
+<p>linkedin.com/in/oguzdikbakan</p>
+</div>
 </div>
 
 <footer>
-    © <span id="current-year"></span> pswise — Practical Solutions, Wisely Delivered
+© <span id="current-year"></span> pswise — Practical Solutions, Wisely Delivered
 </footer>
 
 <script>
-    // Dinamik Yıl
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    
-    // Smooth Scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if (targetId === "#") return;
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
+document.getElementById('current-year').textContent = new Date().getFullYear();
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click',e=>{
+e.preventDefault();
+const t=document.querySelector(a.getAttribute('href'));
+if(t) t.scrollIntoView({behavior:'smooth'});
+});
+});
 </script>
 
 </body>

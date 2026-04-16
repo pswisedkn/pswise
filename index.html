@@ -6,215 +6,244 @@
 
 <title>pswise | Practical Solutions, Wisely Delivered</title>
 
-<meta name="description" content="pswise provides program delivery and advisory services for telecom, IT, finance and digital VAS environments.">
+<meta name="description" content="pswise provides program delivery and advisory services for telecom and digital VAS environments. 20+ years experience in complex multi-country programs.">
+<meta name="keywords" content="telecom consulting, program management, VAS services, project delivery, digital transformation, pswise">
 <meta name="author" content="pswise">
-<link rel="canonical" href="https://www.pswise.com">
+<link rel="canonical" href="https://pswise.com">
 
-<link rel="icon" href="logo.png">
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="logo.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Open Graph -->
+<meta property="og:title" content="pswise | Practical Solutions, Wisely Delivered">
+<meta property="og:description" content="Program delivery and advisory services for telecom and digital VAS environments.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pswise.com">
+<meta property="og:image" content="logo.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pswise">
+<meta name="twitter:description" content="Practical Solutions, Wisely Delivered">
+<meta name="twitter:image" content="logo.png">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "pswise",
+  "url": "https://pswise.com",
+  "description": "Program delivery and advisory services for telecom and digital VAS environments.",
+  "email": "oguz@pswise.com"
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+:root {
+    --bg: #f9fafb;
+    --text: #111;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --border: #e5e7eb;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #111;
+    background: var(--bg);
+    color: var(--text);
 }
 
-/* NAV */
-nav {
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 60px;
+    z-index: 1000;
 }
 
-nav .logo {
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-nav img {
-    width: 28px;
-    height: 28px;
+.logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
 }
 
 /* HERO */
 .hero {
-    max-width: 900px;
-    margin: 120px auto;
     text-align: center;
-    padding: 0 20px;
+    padding: 120px 20px 60px;
 }
 
 .hero h1 {
-    font-size: 64px;
-    font-weight: 500;
-    letter-spacing: -1px;
+    font-size: 60px;
     margin: 0;
 }
 
 .hero h2 {
-    font-size: 18px;
     font-weight: 400;
-    color: #555;
-    margin-top: 20px;
+    color: var(--muted);
 }
 
 .hero p {
-    font-size: 16px;
-    color: #666;
-    margin-top: 25px;
-    line-height: 1.7;
+    max-width: 750px;
+    margin: 20px auto;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.buttons a {
+    padding: 12px 22px;
+    margin: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.primary {
+    background: #111827;
+    color: white;
+}
+
+.secondary {
+    border: 1px solid var(--border);
+    color: var(--text);
 }
 
 /* SECTIONS */
 .section {
-    max-width: 900px;
-    margin: 100px auto;
-    padding: 0 20px;
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.section h2 {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
-/* SIMPLE LIST STYLE */
-.item {
-    margin-bottom: 30px;
-}
-
-.item h3 {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 6px;
-}
-
-.item p {
-    color: #666;
-    line-height: 1.6;
-    font-size: 15px;
-}
-
-/* DIVIDER */
-hr {
-    border: none;
-    border-top: 1px solid #eee;
-    margin: 80px 0;
-}
-
-/* CONTACT */
-.contact {
+h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.contact a {
-    display: block;
-    margin: 10px 0;
-    color: #111;
-    text-decoration: none;
-    font-size: 15px;
+/* GRID */
+.grid {
+    display: grid;
+    gap: 20px;
 }
 
+@media(min-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* IMAGE */
+.image {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 60px;
-    color: #999;
-    font-size: 13px;
+    padding: 40px;
+    color: var(--muted);
+    font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
+<header>
     <div class="logo">
-        <img src="logo.png">
+        <img src="logo.png" alt="pswise logo">
         <span>pswise</span>
     </div>
-</nav>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#cases">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
 <div class="hero">
     <h1>pswise</h1>
     <h2>Practical Solutions, Wisely Delivered</h2>
 
-    <p>
-        I help telecom and digital service providers turn strategy into execution,
-        especially in complex program and VAS environments.
-    </p>
+    <p>I help telecom and digital service providers turn strategy into execution, especially in complex Telecom, IT Programs</p>
+
+    <p><strong>20+ years experience across telecom, delivery and multi-country programs</strong></p>
+
+    <div class="buttons">
+        <a href="#services" class="primary">Explore Services</a>
+        <a href="#contact" class="secondary">Get in Touch</a>
+    </div>
 </div>
 
 <div class="section">
-    <h2>What I Do</h2>
+    <h2>What I Bring</h2>
+    <div class="grid grid-3">
+        <div class="card">
+            <h3>Clarity in Complexity</h3>
+            <p>I simplify complex programs and align teams around priorities.</p>
+        </div>
 
-    <div class="item">
-        <h3>Program Delivery</h3>
-        <p>Complex program execution across telecom environments with multiple stakeholders and vendors.</p>
-    </div>
+        <div class="card">
+            <h3>Execution Focused</h3>
+            <p>Not just planning, real delivery and accountability.</p>
+        </div>
 
-    <div class="item">
-        <h3>Advisory</h3>
-        <p>Practical strategy and execution models for digital and telecom services.</p>
-    </div>
-
-    <div class="item">
-        <h3>Telecom & VAS</h3>
-        <p>VAS platforms, service rollout and monetization-focused delivery support.</p>
-    </div>
-</div>
-
-<hr>
-
-<div class="section">
-    <h2>Experience</h2>
-
-    <div class="item">
-        <h3>Multi-country Telecom Programs</h3>
-        <p>Led large-scale delivery programs across multiple markets and stakeholders.</p>
-    </div>
-
-    <div class="item">
-        <h3>VAS Service Delivery</h3>
-        <p>Supported design and execution of VAS and digital services.</p>
+        <div class="card">
+            <h3>Experience Led</h3>
+            <p>Telecom, software and multi-country program leadership.</p>
+        </div>
     </div>
 </div>
 
-<hr>
+<div class="section" id="services">
+    <h2>Services</h2>
 
-<div class="section">
-    <h2>About</h2>
+    <div class="grid grid-3">
+        <div class="card">
+            <h3>Program Delivery</h3>
+            <p>End-to-end program execution, vendor coordination and risk management in complex environments.</p>
+        </div>
 
-    <p style="color:#666; line-height:1.8;">
-        pswise is built on the belief that execution matters as much as strategy.
-        The focus is on making complex programs workable in real environments.
+        <div class="card">
+            <h3>Advisory</h3>
+            <p>Practical strategy, operating model design and execution planning.</p>
+        </div>
 
-        <br><br>
-
-        With experience across telecom operators and vendors, the approach is grounded in real delivery challenges.
-
-        <br><br>
-
-        The goal is simple: reduce complexity and ensure execution leads to results.
-    </p>
-</div>
-
-<hr>
-
-<div class="section contact">
-    <h2>Contact</h2>
-
-    <a href="mailto:oguz@pswise.com">oguz@pswise.com</a>
-    <a href="https://www.linkedin.com/in/oguzdikbakan/" target="_blank">LinkedIn Profile</a>
-</div>
-
-<footer>
-    © pswise — Practical Solutions, Wisely Delivered
-</footer>
-
-</body>
-</html>
+        <div class="card">
+            <h3>Telecom & VAS</h3>
+            <p>VAS platforms, digital services and monetization-focused delivery support.</p>
+        </
